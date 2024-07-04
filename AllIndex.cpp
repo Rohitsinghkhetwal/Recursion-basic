@@ -14,7 +14,7 @@ vector<int>findAllOccur(vector<int>arr, int index, int num, vector<int>position)
     return findAllOccur(arr, index + 1, num, position);
     
     
-}
+}b
 
 int main() {
     cout << "finding all ocurance of an array" << endl;
