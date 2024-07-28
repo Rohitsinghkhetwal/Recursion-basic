@@ -7,8 +7,6 @@ void Solve(int index, vector<int>&arr, vector<vector<int>>&res, vector<int>&ds) 
         return;
     }
 
-   
-        // dekh yha 2 call hore hain pick and non pick wala ye samjh gya m
         
         ds.push_back(arr[index]);
         Solve(index + 1, arr, res, ds);

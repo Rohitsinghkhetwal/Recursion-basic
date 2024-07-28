@@ -7,8 +7,6 @@ void Solve(int index, vector<int>&arr, vector<vector<int>>&res) {
         return;
     }
 
-    // yha dekh 1 hi call hai question same type hai na permutation and subset ka 1 call do call ka funda bta ? 
-
     for(int i = index; i < arr.size(); i++) {
         swap(arr[index], arr[i]);
         Solve(index + 1, arr, res);
