@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-void SubSeq(int arr[], vector<int>dts, int sz, int index) {
+void SubSeq(int arr[], vector<int>&dts, int sz, int index) {
     // base case 
     if(index == sz) {
         for(auto it: dts) {
