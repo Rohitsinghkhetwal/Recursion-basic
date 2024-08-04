@@ -5,7 +5,7 @@ void Solve(int index, vector<int>&arr, vector<vector<int>>&res) {
     if(index == arr.size()) {
         res.push_back(arr);
         return;
-    }
+    }   
 
     for(int i = index; i < arr.size(); i++) {
         swap(arr[index], arr[i]);
@@ -23,5 +23,16 @@ int main()
 {
     cout << " Permutation of a Number and string " << endl;
     vector<int> arr = {1, 2, 3};
-    permute(arr);
+   
+    vector<vector<int>>result =  permute(arr);
+    for ( auto subset : result) {
+        cout << "[";
+        for (int i = 0; i < subset.size(); ++i) {
+            cout << subset[i];
+            if (i < subset.size() - 1) {
+                cout << ", ";
+            }
+        }
+        cout << "]" << endl;
+    }
 }
