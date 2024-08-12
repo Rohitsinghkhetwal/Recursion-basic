@@ -1,13 +1,14 @@
 {
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
-        "*.tcc": "cpp",
-        "chrono": "cpp",
-        "vector": "cpp",
-        "functional": "cpp",
-        "random": "cpp",
-        "format": "cpp",
-        "memory_resource": "cpp",
-        "regex": "cpp"
+      "*.tcc": "cpp",
+      "chrono": "cpp",
+      "vector": "cpp",
+      "functional": "cpp",
+      "random": "cpp",
+      "format": "cpp",
+      "memory_resource": "cpp",
+      "regex": "cpp",
+      "iostream": "cpp"
     }
 }

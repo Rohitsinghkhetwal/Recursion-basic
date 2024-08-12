@@ -2,7 +2,7 @@
 using namespace std;
 vector<vector<int>>ans;
 
-void Helper(int ind,vector<int>&arr) {
+void Helper(int ind,vector<int>arr) {
   // base case
   if(ind == arr.size()) {
     ans.push_back(arr);
@@ -13,7 +13,6 @@ void Helper(int ind,vector<int>&arr) {
     if(i == ind || arr[i] != arr[ind]) {
     swap(arr[ind] , arr[i]);
     Helper(ind + 1, arr);
-    swap(arr[ind], arr[i]);
     }
   }
 }
