@@ -8,7 +8,7 @@ void Combination(int start, int &n, int k, vector<int>&temp) {
     return;
   }
 
-  if(start >= n) {
+  if(start > n) {
     return;
   }
 

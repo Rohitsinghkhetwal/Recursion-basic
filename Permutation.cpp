@@ -3,15 +3,16 @@ using namespace std;
 void Solve(int index, vector<int>&arr, vector<vector<int>>&res) {
     // base case 
     if(index == arr.size()) {
-        res.push_back(arr);
-        return;
-    }   
+      res.push_back(arr);
+      return;
+    }
 
     for(int i = index; i < arr.size(); i++) {
-        swap(arr[index], arr[i]);
-        Solve(index + 1, arr, res);
-        swap(arr[index] , arr[i]);
+      swap(arr[index], arr[i]);
+      Solve(index + 1, arr, res);
+      swap(arr[index], arr[i]);
     }
+   
 }
 vector<vector<int>> permute(vector<int> &arr)
 {
