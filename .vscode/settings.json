@@ -9,6 +9,7 @@
       "format": "cpp",
       "memory_resource": "cpp",
       "regex": "cpp",
-      "iostream": "cpp"
+      "iostream": "cpp",
+      "list": "cpp"
     }
 }
